@@ -1,0 +1,76 @@
+/* 全局css */
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, dt, dd, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    font-family: 宋体;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+input, img {
+    vertical-align: middle;
+    border: 0 none;
+    outline-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*自定义css*/
+body {
+    background-color: #F6F6F6;
+}
+
+article {
+    width: 888px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+header {
+    height: 120px;
+    overflow: hidden;
+    border-bottom: 1px solid #E4D0D0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 25px auto;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+    font-family: Arial, 华文行楷;
+}
+
+.content {
+    padding: 10px;
+    border-bottom: 1px solid #E4D0D0;
+}
+
+.imagelist img {
+    display: block;
+    margin: 0 auto;
+    box-sizing:border-box;
+    max-width: 100%;
+    border-bottom: 1px solid black;
+}
