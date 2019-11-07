@@ -1,5 +1,5 @@
-//图片懒加载
 document.addEventListener('DOMContentLoaded', function () {
+    //图片懒加载
     var images = document.querySelectorAll(".imageList img");
     var placeholderImagePath = "/privateBeauty/image/common/placeholderImage.jpg";
     for (var i = 0; i < images.length; i++) {
