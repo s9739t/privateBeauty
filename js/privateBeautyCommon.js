@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (var i = 0; i < images.length; i++) {
         images[i].setAttribute("data-src", images[i].src);
         if (i > 3) {
-            images[i].setAttribute("src", "https://iph.href.lu/100x130?text=加载中...&bg=DDDDDD");
+            images[i].setAttribute("src", "/privateBeauty/image/common/placeholderImage.jpg");
         }
     }
     window.onscroll = function (e) {
