@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     window.onscroll = function (e) {
         for (var i = 0; i < images.length; i++) {
             if (images[i].src.toString() != images[i].getAttribute("data-src").toString()) {
-                if (document.documentElement.scrollTop + images[i].offsetHeight * 3 > images[i].offsetTop) {
+                var newScrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;   //兼容代码
+                if (newScrollTop * 3 > images[i].offsetTop) {
                     images[i].setAttribute("src", images[i].getAttribute("data-src"));
                 }
             }
