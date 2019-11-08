@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var images = document.querySelectorAll(".imageList img");
     var placeholderImagePath = "/privateBeauty/image/common/placeholderImage.jpg";
     for (var i = 0; i < images.length; i++) {
-        images[i].setAttribute("data-src", images[i].src);
-        if (i > 3) {
-            images[i].setAttribute("src", placeholderImagePath);
+        images[i].setAttribute("src", placeholderImagePath);
+        if (i < 3) {
+            images[i].setAttribute("src", images[i].getAttribute("data-src").toString());
         }
     }
     window.onscroll = function (e) {
