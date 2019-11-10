@@ -74,5 +74,6 @@ header h1 {
     max-width: 100%;
     width: 100%;
     border: 3px solid black;
-    border-top: 0px solid black;
+    border-bottom: 3px solid #fff700;
+    border-top-width: 0px;
 }
