@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //图片懒加载
     (function () {
         var images = document.querySelectorAll(".imageList img");
-        var placeholderImagePath = "/privateBeauty/image/common/placeholderImage.jpg";
+        // var placeholderImagePath = "/privateBeauty/image/common/placeholderImage.jpg";
+        var placeholderImagePath = "http://ww1.sinaimg.cn/large/006HJUcHly1gbhyu5sm9xj30b40dhgn7.jpg";
         for (var i = 0; i < images.length; i++) {
             images[i].setAttribute("src", placeholderImagePath);
             if (i < 3) {
