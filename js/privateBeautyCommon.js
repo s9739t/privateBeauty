@@ -1,5 +1,5 @@
+//图片懒加载
 document.addEventListener('DOMContentLoaded', function () {
-    //图片懒加载
     (function () {
         var images = document.querySelectorAll(".imageList img");
         // var placeholderImagePath = "/privateBeauty/image/common/placeholderImage.jpg";
@@ -23,4 +23,19 @@ document.addEventListener('DOMContentLoaded', function () {
     })();
 });
 
+//翻页相关函数
+//获取当前页面名称
+function getCurrentPageName() {
+    var linkStr = window.location.href;
+    var pageName = linkStr.substring(linkStr.lastIndexOf("/") + 1, linkStr.indexOf(".html"));
+    return pageName;
+}
 
+//翻页
+function turnPage(pageNum) {
+    var linkStr = window.location.href;
+    var pageToNum = parseInt(getCurrentPageName()) + pageNum;
+    var lastPartStr = linkStr.substring(0, linkStr.lastIndexOf("/") + 1);
+    var nextPartStr = linkStr.substring(linkStr.indexOf(".html"));
+    window.location.href = lastPartStr + pageToNum + nextPartStr;
+}
